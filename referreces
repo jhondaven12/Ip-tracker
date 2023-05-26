@@ -1,0 +1,17 @@
+https://ipinfo.io/account/home
+https://www.youtube.com/watch?v=vidOkPR75qE
+
+https://geo.ipify.org/api/v2/country,city,vpn?apiKey=at_QRfwKyWENJ6VktWzVISaQ9tvaQDjp&ipAddress=8.8.8.8
+
+${api_uri}${current_version}${secret_api}
+
+
+  IP Address Tracker
+
+  Search for any IP address or domain
+
+  IP Address
+  Location
+  Timezone
+    UTC <!-- add offset value dynamically using the API -->
+  ISP

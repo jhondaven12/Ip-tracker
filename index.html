@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="style/index.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.1/dist/leaflet.css"/>
+  <title>IP tracker</title>
+</head>
+<body>
+  <div class="app-container">
+   
+    <!--input search for ip address or domain-->
+    <div class="form-container">
+      <h1 class="title">IP Address Tracker</h1>
+
+      <form class="form-elements">
+        <input type="text" id="ip_address" class="form-control" placeholder="Search for any IP address or domain">
+        <button class="btn btn-dark" id="search_btn">
+          <img src="images/icon-arrow.svg">
+        </button>
+      </form>
+    </div>
+
+    <!--Display result-->
+    <div class="display-result">
+
+      <div class="arrow-icon">
+        <img src="./images/arrow-upward-outline.svg" id="upArrow">
+      </div>
+      
+      <div class="display-container" data-container>
+
+        <div class="info">
+          <h4 class="muted-title">IP ADDRESS</h4>
+          <span class="result" id="current_ip"></span>
+        </div>
+
+        <div class="verticle_line"></div>
+        
+        <div class="info">
+          <h4 class="muted-title">LOCATION</h4>
+          <span class="result" id="current_town"></span>
+        </div>
+
+        <div class="verticle_line"></div>
+
+        <div class="info">
+          <h4 class="muted-title">TIMEZOZNE</h4>
+          <span class="result" id="current_timezone"></span>
+        </div>
+
+        <div class="verticle_line"></div>
+
+        <div class="info">
+          <h4 class="muted-title">ISP</h4>
+          <span class="result" id="current_isp"></span>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="map-container">
+      <div id="map"></div>
+    </div>
+    <script src="https://unpkg.com/leaflet@1.9.1/dist/leaflet.js"></script>
+    <script src="js/index.js"></script>
+    <script type="text/javascript" src="js/arrow.js">//</script>
+  </div>
+  
+</body>
+</html>
